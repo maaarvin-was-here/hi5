@@ -2,23 +2,22 @@ import * as React from 'react';
 import { Image, StyleSheet } from 'react-native';
 
 import { Text, View } from '../components/Themed';
-import { LinearGradient } from 'expo-linear-gradient';
+import { renderSwitch } from './NearbyPersonBox';
 
 type CurrentMessageBoxProps = {
   message: string;
   name: string;
+  avatar: number;
 };
 
 export default function CurrentMessageBox(props: CurrentMessageBoxProps) {
-  const { message, name } = props;
+  const { message, name, avatar } = props;
+  var pic = renderSwitch(avatar);
   return (
     <View style={styles.outer_box}>
       <Text>
         <View style={styles.container}>
-          <Image
-            source={require('./img/avatar_1.png')}
-            style={{ width: 80, height: 80 }}
-          />
+          <Image source={pic} style={{ width: 80, height: 80 }} />
         </View>
         <View style={styles.container}>
           <Text style={styles.name}>

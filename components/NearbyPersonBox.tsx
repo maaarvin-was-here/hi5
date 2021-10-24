@@ -12,7 +12,21 @@ type NearbyPersonBoxProps = {
   is_student: boolean;
   is_vaccinated: boolean;
   is_verified: boolean;
+  avatar: number;
 };
+
+export function renderSwitch(avatar: number) {
+  switch (avatar) {
+    case 1:
+      return require('../components/img/avatar_1.png');
+    case 2:
+      return require('../components/img/avatar_2.png');
+    case 3:
+      return require('../components/img/avatar_3.png');
+    default:
+      return require('../components/img/avatar_4.png');
+  }
+}
 
 export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
   const {
@@ -24,6 +38,7 @@ export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
     is_student,
     is_vaccinated,
     is_verified,
+    avatar,
   } = props;
   var flag = is_flagged
     ? require('./img/red-flag.png')
@@ -37,14 +52,12 @@ export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
   var phone = is_verified
     ? require('./img/green-phone.png')
     : require('./img/red-phone.png');
+  var pic = renderSwitch(avatar);
   return (
     <View style={styles.outer_box}>
       <Text>
         <View style={styles.container}>
-          <Image
-            source={require('./img/avatar_1.png')}
-            style={{ width: 80, height: 80 }}
-          />
+          <Image source={pic} style={{ width: 80, height: 80 }} />
           <View style={styles.verification_icon_row}>
             <Image source={covid} style={styles.verification_icon} />
             <Image source={student} style={styles.verification_icon} />
@@ -83,6 +96,7 @@ const styles = StyleSheet.create({
   },
   verification_icon_row: {
     flexDirection: 'row',
+    backgroundColor: '#ECECEC',
   },
   verification_icon: {
     marginRight: 1,

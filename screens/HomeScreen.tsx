@@ -12,10 +12,12 @@ export default function HomeScreen() {
       <CurrentMessageBox
         name="Olivia"
         message="I'm by the fountain."
+        avatar={3}
       ></CurrentMessageBox>
       <CurrentMessageBox
         name="Liam"
         message="Let's meet up!"
+        avatar={4}
       ></CurrentMessageBox>
       <Text style={styles.separating_bar}>People Nearby</Text>
       <NearbyPersonBox
@@ -27,6 +29,7 @@ export default function HomeScreen() {
         is_student={true}
         is_vaccinated={false}
         is_verified={true}
+        avatar={2}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Ezekiel"
@@ -37,6 +40,7 @@ export default function HomeScreen() {
         is_student={false}
         is_vaccinated={true}
         is_verified={true}
+        avatar={1}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Carlos"
@@ -47,6 +51,7 @@ export default function HomeScreen() {
         is_student={true}
         is_vaccinated={true}
         is_verified={true}
+        avatar={4}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Malika"
@@ -57,6 +62,7 @@ export default function HomeScreen() {
         is_student={true}
         is_vaccinated={true}
         is_verified={true}
+        avatar={3}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Stephen"
@@ -67,6 +73,7 @@ export default function HomeScreen() {
         is_student={true}
         is_vaccinated={true}
         is_verified={false}
+        avatar={1}
       ></NearbyPersonBox>
     </ScrollView>
   );
