@@ -38,7 +38,7 @@ export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
     ? require('./img/green-phone.png')
     : require('./img/red-phone.png');
   return (
-    <View style={styles.container}>
+    <View style={styles.outer_box}>
       <Text>
         <View style={styles.container}>
           <Image
@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 8,
+    backgroundColor: '#ECECEC',
   },
   verification_icon_row: {
     flexDirection: 'row',
@@ -93,6 +94,13 @@ const styles = StyleSheet.create({
     marginBottom: -25,
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  outer_box: {
+    flex: 1,
+    padding: 8,
+    backgroundColor: '#ECECEC',
+    borderRadius: 10,
+    margin: 5,
   },
   italic: { fontStyle: 'italic' },
   separator: {

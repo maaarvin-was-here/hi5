@@ -18,11 +18,6 @@ export default function HomeScreen() {
         message="Let's meet up!"
       ></CurrentMessageBox>
       <Text style={styles.separating_bar}>People Nearby</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
       <NearbyPersonBox
         name="Celeste"
         interest_1="Cooking"
@@ -33,11 +28,6 @@ export default function HomeScreen() {
         is_vaccinated={false}
         is_verified={true}
       ></NearbyPersonBox>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
       <NearbyPersonBox
         name="Ezekiel"
         interest_1="Travelling"
@@ -48,11 +38,6 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={true}
       ></NearbyPersonBox>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
       <NearbyPersonBox
         name="Carlos"
         interest_1="Dance"
@@ -63,11 +48,6 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={true}
       ></NearbyPersonBox>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
       <NearbyPersonBox
         name="Malika"
         interest_1="Acting"
@@ -78,11 +58,6 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={true}
       ></NearbyPersonBox>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
       <NearbyPersonBox
         name="Stephen"
         interest_1="Pokemon"
