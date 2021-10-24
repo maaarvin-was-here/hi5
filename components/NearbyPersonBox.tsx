@@ -18,13 +18,13 @@ type NearbyPersonBoxProps = {
 export function renderSwitch(avatar: number) {
   switch (avatar) {
     case 1:
-      return require('../components/img/avatar_1.png');
+      return require('../assets/images/avatar_1.png');
     case 2:
-      return require('../components/img/avatar_2.png');
+      return require('../assets/images/avatar_2.png');
     case 3:
-      return require('../components/img/avatar_3.png');
+      return require('../assets/images/avatar_3.png');
     default:
-      return require('../components/img/avatar_4.png');
+      return require('../assets/images/avatar_4.png');
   }
 }
 
@@ -41,17 +41,17 @@ export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
     avatar,
   } = props;
   var flag = is_flagged
-    ? require('./img/red-flag.png')
-    : require('./img/green-flag.png');
+    ? require('../assets/images/red-flag.png')
+    : require('../assets/images/green-flag.png');
   var student = is_student
-    ? require('./img/green-student.png')
-    : require('./img/red-student.png');
+    ? require('../assets/images/green-student.png')
+    : require('../assets/images/red-student.png');
   var covid = is_vaccinated
-    ? require('./img/green-covid.png')
-    : require('./img/red-covid.png');
+    ? require('../assets/images/green-covid.png')
+    : require('../assets/images/red-covid.png');
   var phone = is_verified
-    ? require('./img/green-phone.png')
-    : require('./img/red-phone.png');
+    ? require('../assets/images/green-phone.png')
+    : require('../assets/images/red-phone.png');
   var pic = renderSwitch(avatar);
   return (
     <View style={styles.outer_box}>
