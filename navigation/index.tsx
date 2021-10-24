@@ -78,7 +78,7 @@ const BottomTab = createBottomTabNavigator<RootTabParamList>();
 
 function BottomTabNavigator() {
   const colorScheme = useColorScheme();
-  const appName = 'MeetMoment';
+  const appName = 'HiFive';
 
   return (
     <BottomTab.Navigator
@@ -93,7 +93,7 @@ function BottomTabNavigator() {
         name="TabTwo"
         component={HomeScreen}
         options={{
-          title: 'MeetMoment',
+          title: 'HiFive',
           tabBarShowLabel: false,
           tabBarIcon: ({}) => <Icon name="home" size={30} color="white" />,
         }}
