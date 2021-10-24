@@ -130,9 +130,4 @@ const styles = StyleSheet.create({
     color: 'black',
   },
   italic: { fontStyle: 'italic', color: 'black' },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
 });

@@ -89,14 +89,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
   },
-  separating_bar: { fontSize: 20, fontWeight: 'bold', padding: 10 },
-  title: {
+  separating_bar: {
     fontSize: 20,
     fontWeight: 'bold',
+    padding: 10,
     color: 'black',
-  },
-  separator: {
-    height: 1,
-    width: '80%',
   },
 });
