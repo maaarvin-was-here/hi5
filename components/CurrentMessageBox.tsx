@@ -34,7 +34,7 @@ export default function CurrentMessageBox(props: CurrentMessageBoxProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 5,
+    padding: 8,
   },
   name: {
     marginTop: 10,
