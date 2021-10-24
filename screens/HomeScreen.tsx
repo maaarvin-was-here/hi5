@@ -13,20 +13,10 @@ export default function HomeScreen() {
         name="Olivia"
         message="I'm by the fountain."
       ></CurrentMessageBox>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
       <CurrentMessageBox
         name="Liam"
         message="Let's meet up!"
       ></CurrentMessageBox>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
       <Text style={styles.separating_bar}>People Nearby</Text>
       <View
         style={styles.separator}
@@ -110,6 +100,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'white',
   },
   separating_bar: { fontSize: 20, fontWeight: 'bold', padding: 10 },
   title: {

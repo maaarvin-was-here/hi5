@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Image, StyleSheet } from 'react-native';
 
 import { Text, View } from '../components/Themed';
+import { LinearGradient } from 'expo-linear-gradient';
 
 type CurrentMessageBoxProps = {
   message: string;
@@ -11,7 +12,7 @@ type CurrentMessageBoxProps = {
 export default function CurrentMessageBox(props: CurrentMessageBoxProps) {
   const { message, name } = props;
   return (
-    <View style={styles.container}>
+    <View style={styles.outer_box}>
       <Text>
         <View style={styles.container}>
           <Image
@@ -35,16 +36,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 8,
+    backgroundColor: '#72dcc3',
   },
   name: {
     marginTop: 10,
     fontSize: 20,
     fontWeight: 'bold',
   },
-  italic: { fontStyle: 'italic', marginTop: -20 },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+  outer_box: {
+    flex: 1,
+    padding: 8,
+    backgroundColor: '#72dcc3',
+    borderRadius: 10,
+    margin: 5,
   },
+  italic: { fontStyle: 'italic', marginTop: -20 },
 });
