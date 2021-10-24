@@ -111,9 +111,10 @@ const styles = StyleSheet.create({
   },
   name: {
     marginTop: 10,
-    marginBottom: -25,
+    marginBottom: -20,
     fontSize: 20,
     fontWeight: 'bold',
+    color: 'black',
   },
   outer_box: {
     flex: 1,
@@ -122,8 +123,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin: 5,
   },
-  distance: { fontStyle: 'italic', fontWeight: 'normal', fontSize: 15 },
-  italic: { fontStyle: 'italic' },
+  distance: {
+    fontStyle: 'italic',
+    fontWeight: 'normal',
+    fontSize: 15,
+    color: 'black',
+  },
+  italic: { fontStyle: 'italic', color: 'black' },
   separator: {
     marginVertical: 30,
     height: 1,

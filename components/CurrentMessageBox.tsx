@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontSize: 20,
     fontWeight: 'bold',
+    color: 'black',
   },
   outer_box: {
     flex: 1,
@@ -49,5 +50,5 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin: 5,
   },
-  italic: { fontStyle: 'italic', marginTop: -20 },
+  italic: { fontStyle: 'italic', marginTop: -20, color: 'black' },
 });
