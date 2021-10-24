@@ -74,7 +74,7 @@ export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
               {' - '}
               {distance}
               {'m\n'}
-            </Text>{' '}
+            </Text>
           </Text>
           <Text style={styles.italic}>
             {'\u2022 '}
