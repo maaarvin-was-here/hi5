@@ -66,6 +66,36 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={true}
       ></NearbyPersonBox>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+      <NearbyPersonBox
+        name="Malika"
+        interest_1="Acting"
+        interest_2="Singing"
+        interest_3="Enjoying new food spots"
+        is_flagged={false}
+        is_student={true}
+        is_vaccinated={true}
+        is_verified={true}
+      ></NearbyPersonBox>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+      <NearbyPersonBox
+        name="Stephen"
+        interest_1="Pokemon"
+        interest_2="Gardening"
+        interest_3="Collecting new gemstones"
+        is_flagged={false}
+        is_student={true}
+        is_vaccinated={true}
+        is_verified={false}
+      ></NearbyPersonBox>
     </ScrollView>
   );
 }
