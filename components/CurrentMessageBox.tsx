@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 8,
-    backgroundColor: '#72dcc3',
+    backgroundColor: '#73D6D8',
   },
   name: {
     marginTop: 10,
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   outer_box: {
     flex: 1,
     padding: 8,
-    backgroundColor: '#72dcc3',
+    backgroundColor: '#73D6D8',
     borderRadius: 10,
     margin: 5,
   },

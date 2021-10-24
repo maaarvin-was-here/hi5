@@ -21,6 +21,7 @@
     "expo-asset": "~8.4.3",
     "expo-constants": "~12.1.2",
     "expo-font": "~10.0.3",
+    "expo-linear-gradient": "~10.0.3",
     "expo-linking": "~2.4.2",
     "expo-location": "~13.0.4",
     "expo-splash-screen": "~0.13.3",
@@ -35,10 +36,10 @@
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.8.0",
     "react-native-unordered-list": "^1.0.4",
+    "react-native-vector-icons": "^8.1.0",
     "react-native-web": "0.17.1",
     "styled-components": "^5.3.3",
-    "styled-system": "^5.1.5",
-    "expo-linear-gradient": "~10.0.3"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
