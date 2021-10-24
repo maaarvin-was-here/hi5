@@ -26,6 +26,8 @@ import {
   RootTabScreenProps,
 } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import Entypo from 'react-native-vector-icons/Ionicons';
 
 export default function Navigation({
   colorScheme,
@@ -83,16 +85,17 @@ function BottomTabNavigator() {
       initialRouteName="TabTwo"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
-        tabBarActiveBackgroundColor: '#72dcc3',
-        tabBarInactiveBackgroundColor: '#72dcc3',
+        tabBarActiveBackgroundColor: '#73D6D8',
+        tabBarInactiveBackgroundColor: '#646464',
       }}
     >
       <BottomTab.Screen
         name="TabTwo"
         component={HomeScreen}
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'MeetMoment',
+          tabBarShowLabel: false,
+          tabBarIcon: ({}) => <Icon name="home" size={30} color="white" />,
         }}
       />
       <BottomTab.Screen
@@ -100,7 +103,10 @@ function BottomTabNavigator() {
         component={ProfileScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
           title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarShowLabel: false,
+          tabBarIcon: ({}) => (
+            <Entypo name="person-outline" size={30} color="white" />
+          ),
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate('Modal')}

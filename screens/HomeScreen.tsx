@@ -30,6 +30,7 @@ export default function HomeScreen() {
         is_vaccinated={false}
         is_verified={true}
         avatar={2}
+        distance={500}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Ezekiel"
@@ -41,6 +42,7 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={true}
         avatar={1}
+        distance={1000}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Carlos"
@@ -52,6 +54,7 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={true}
         avatar={4}
+        distance={1200}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Malika"
@@ -63,6 +66,7 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={true}
         avatar={3}
+        distance={1500}
       ></NearbyPersonBox>
       <NearbyPersonBox
         name="Stephen"
@@ -74,6 +78,7 @@ export default function HomeScreen() {
         is_vaccinated={true}
         is_verified={false}
         avatar={1}
+        distance={7000}
       ></NearbyPersonBox>
     </ScrollView>
   );
