@@ -102,7 +102,7 @@ function BottomTabNavigator() {
         name="TabOne"
         component={ProfileScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
+          title: 'Profile',
           tabBarShowLabel: false,
           tabBarIcon: ({}) => (
             <Entypo name="person-outline" size={30} color="white" />
