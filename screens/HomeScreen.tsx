@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
 
-import { View } from '../components/Themed';
+import { Text, View } from '../components/Themed';
 import CurrentMessageBox from '../components/CurrentMessageBox';
 import NearbyPersonBox from '../components/NearbyPersonBox';
 
 export default function HomeScreen() {
   return (
     <ScrollView style={styles.container}>
+      <Text style={styles.separating_bar}>Current Messages</Text>
       <CurrentMessageBox
         name="Olivia"
         message="I'm by the fountain."
@@ -21,6 +22,12 @@ export default function HomeScreen() {
         name="Liam"
         message="Let's meet up!"
       ></CurrentMessageBox>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+      <Text style={styles.separating_bar}>People Nearby</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
@@ -104,6 +111,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  separating_bar: { fontSize: 20, fontWeight: 'bold', padding: 10 },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
