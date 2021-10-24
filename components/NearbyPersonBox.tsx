@@ -13,6 +13,7 @@ type NearbyPersonBoxProps = {
   is_vaccinated: boolean;
   is_verified: boolean;
   avatar: number;
+  distance: number;
 };
 
 export function renderSwitch(avatar: number) {
@@ -39,6 +40,7 @@ export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
     is_vaccinated,
     is_verified,
     avatar,
+    distance,
   } = props;
   var flag = is_flagged
     ? require('../assets/images/red-flag.png')
@@ -68,7 +70,11 @@ export default function NearbyPersonBox(props: NearbyPersonBoxProps) {
         <View style={styles.container}>
           <Text style={styles.name}>
             {name}
-            {'\n'}
+            <Text style={styles.distance}>
+              {' - '}
+              {distance}
+              {'m\n'}
+            </Text>{' '}
           </Text>
           <Text style={styles.italic}>
             {'\u2022 '}
@@ -116,6 +122,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin: 5,
   },
+  distance: { fontStyle: 'italic', fontWeight: 'normal', fontSize: 15 },
   italic: { fontStyle: 'italic' },
   separator: {
     marginVertical: 30,
