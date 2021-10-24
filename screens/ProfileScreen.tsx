@@ -199,6 +199,7 @@ const styles = StyleSheet.create({
     height: '25%',
     backgroundColor: '#ececec',
     borderRadius: 0.07 * windowWidth,
+    paddingBottom: 0.06 * windowHeight,
   },
   interestText: {
     color: 'black',
